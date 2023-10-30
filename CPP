@@ -1,0 +1,61 @@
+The wildcard character in MySQL is:
+- %
+
+Which of the following FTP clients are required for usage when establishing FTP connections to an account created within the cPanel FTP Accounts user interface?
+- Any viable FTP client may be used.
+
+When using the 'Manage Suspension' interface for an email account, what does selecting 'Hold' for the Send option do?
+- Holds all of that account's outbound emails in the queue until Send has been changed back to the 'Allow' setting.
+
+A subdomain requires its own DNS zone, separate from its parent domain's DNS zone.
+- False
+
+Which of the following best describes an Add-on domain?
+- An alias domain redirecting to a subdomain.
+
+Using the "Discard Email" option in a forwarder is the recommended way to handle auto-deletion of emails incoming to a particular address.
+- False
+
+Which of the following indicates the recommended method to find more information on how MySQL privileges work?
+- Refer to the official MySQL documentation (aka, google 'mysql privileges').
+
+The most effective approach to creating email filters is to combine as many criteria into a single filter as possible, helping to avoid excess amounts of filter entries.
+- False
+
+Which of the following terms is used to describe different sets of changes that exist within Git repositories?
+- Branches
+
+Which of the following must be enabled by your host, on your account's server, before you will be able to utilize the File & Directory Restoration feature?
+- Backups
+
+In the MySQL Database interface, you've successfully created a database and a database user. You want the new user to be able to access the new database. What is the next step?
+- Assign the user to the database in the 'MySQL Databases' interface.
+
+Without shell access, you cannot utilize Git Version Control's features in the cPanel interface
+- False
+
+Match the following SSL Certificate types with their validation methods.
+- Extended Validation: The Certificate Authority has proof the organization exists and does business outside of the internet.
+- Domain Validation: Validates that the domain is registered and accessible over the internet by DNS or HTTP.
+- Organized Validation: The organization is validated by a 3rd party organization.
+
+What is the name for a type of domain that is managed by cPanel, but contains no actual content, and is instead redirected to another domain?
+- Alias Domain.
+
+Which of these follow-up steps must be taken after generating a DNSSEC key for a domain?
+- Configure a DS record with your domain's registrar.
+
+If you don't see "MySQL Disk Usage" in the right-hand sidebar of your cPanel account interface, that means you don't have any databases.
+- False
+
+Which of the following is not included in Disk Usage calculations?
+- Email Metadata
+
+Which of the following 3rd-party applications is used to manage mailing lists, on a cPanel environment?
+- Mailman
+
+Which of the following are required to obtain an SSL certificate through the SSL/TLS Wizard?
+- A registered cPanel Store account
+
+When changes are made in the MultiPHP INI Editor interface, what file are the configuation changes written into?
+- php.ini
