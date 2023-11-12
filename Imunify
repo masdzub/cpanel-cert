@@ -45,7 +45,7 @@ In which of the following lists would you add an IP address that should always b
 - White
 
 How many days does Imunify360 allow for its trial period?
-- 7 Days
+- 14 Days
 
 Which of the following ensures that the 'defense' mode of the Proactive Defense component of Imunify360 is used?
 - Kill mode
@@ -54,7 +54,7 @@ Which of the following domains can be successfully used to access Imunify360's o
 - docs.imunify360.com
 
 When viewing the Incidents tab of the User Interface, what color of 'bubble' containing an IP would indicate that the IP is not in any list and that the IP address is not blocked?
-- Green
+- Blue
 
 Into which of the following lists does a malicious IP get added into automatically, once detected by Imunify360's heuristics?
-- Black List
+- Grey List
