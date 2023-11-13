@@ -858,3 +858,26 @@ Within which of the following WHM interfaces would you perform a graceful restar
 In which of the following WHM interfaces would you enter the default nameservers for accounts that root creates?
 - WHM Home >> Server Configuration >> Basic WebHost Manager Setup
 
+Which of the following columns, found in the WHM Home >> SQL Services >> Show MySQL Processes interface, indicate the actual query being executed by the indicated process?
+- query
+
+Which of the following actions can you perform directly from within the WHM interface, without using phpMyAdmin?
+-  Change a database user's password.
+
+Which of the following options describes the best way to import a SQL dump into a PostgreSQL databases via the WHM interface?
+- There are no features in WHM that provide this capability; it must be performed from the command-line.
+
+Which of the following options accurately describes the behavior of an open relay server?
+- An open relay server does not require you to authenticate.
+
+Which of the following mail diagnostics are available within the WHM interface, and can help you troubleshoot mail?
+- A diagnostic tool that provides a telnet-like interface, allowing you to manually reproduce the SMTP process.
+
+Which of the following options describe an actual value that can be adjusted within the WHM Home » Service Configuration » Mailserver Configuration interface?
+- Controlling the maximum and spare quantities of authentication daemon processes.
+
+If the mail server defers a message, what did it do to the message?
+- Delay it.
+
+Given the following options, which of these accurately describe the behavior of the Mail Troubleshooter interface, found in WHM?
+- It can report the remote or local server that Exim uses to hand off messages for a specific email address.
