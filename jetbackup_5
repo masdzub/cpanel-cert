@@ -53,7 +53,7 @@ All backup destinations support incremental backups
 No, Amazon s3 doesn’t support incremental backups -?
 Incremental backups are not supported at all
 No -?
-Yes
+Yes --
 
 
 
@@ -78,7 +78,7 @@ Custom hook failed to execute.
 What is required for a Backup-on-demand?
 
 An active backup job with incremental supported destinations
-An active backup job configured for full account backups -
+An active backup job configured for full account backups - -
 An active backup job with object storage support
 An active backup job - 
 
@@ -107,7 +107,7 @@ Compressed backups are supported for all destinations.
 
 Compressed backups are supported only on Object server based destinations -?
 Compressed backups are not supported 
-Yes
+Yes - -
 No -?
 
 
@@ -133,7 +133,7 @@ Yes, using file excludes
 What is the difference between an archived backup and a compressed backup? (How is archived different?)
 
 There is no difference
-Archived is an uncompressed version of a compressed backup -?
+Archived is an uncompressed version of a compressed backup -? - -
 Archive only stores changes inside tar file -? 
 Archive is a gzip version of a compressed backup -?
 
