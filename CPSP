@@ -1001,3 +1001,17 @@ CentOS Servers
 Windows Servers -- !!
 Redhat Servers
 Amazon Linux Servers
+
+Which of the following options best describes one way that cPanel makes installation of cPanel & WHM an easy process?
+- cPanel provides a single command that can be copied and pasted onto the command line.
+
+Which of the following operating systems are supported by cPanel & WHM's official system requirements? (Select all that apply.)
+- CentOS Server
+- Ubuntu Server
+
+Which of the following options indicates an actual interface within WHM that will allow administrators to specify which features are available to specific users or packages on the server?
+
+Policy Manager
+- Feature Manager
+Adjust Package
+Option Selector
