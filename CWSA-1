@@ -1,0 +1,6 @@
+What is the name of the basic tool used to remotely test a non-secure connection to IMAP or other mail services?
+- telnet
+
+What's the name of the utility used to check what active connections Exim is currently handling at any particular time?
+-exiwhat
+
