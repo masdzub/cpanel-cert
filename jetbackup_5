@@ -1,0 +1,183 @@
+I can see backups in WHM for my client but when the client tries to browse his backups through the JetBackup section of the cPanel GUI, it appears as if there are no backups. How is this possible?
+
+Admin has disabled "Backup Visibility" inside the backup destination -- 
+Admin has prevented access to snapshots through JetBackup ACL
+The backup index must be wrong(admin needs to run re-index) 
+JetBackup is not enabled inside cPanel’s feature manager
+
+
+Can a client schedule a backup job to run right after another backup job?
+
+No, each backup will run at the specified time in the job settings
+It Depends on the job type, only same type backups can run one after another
+No, but backups can run simultaneously
+Yes - JetBackup has a schedule type "after job is done" --
+
+
+Can I restore a single file from a backup?
+
+Yes, you can restore a single file from any backup --
+Yes, only from a Google drive destination
+No, only a full acco unt restore is possible
+Yes, but this is limited to incremental backups only
+
+
+
+How does JetBackup handle a multi-scheduled Backup Job?
+
+JetBackup tags each backup with the appropriate schedule type(s) and only executes once if multiple schedules align at the same time
+JetBackup does not support multi-scheduled Backup Job and you would need to create separate Backup Jobs per schedule.
+JetBackup executes backup jobs daily and retroactively modifies existing backups and tags with the correct schedule type that coincides with the schedules set in the backup job.
+JetBackup executes the backup job for each schedule type to ensure that there’s a backup for the correct schedule regardless if it’s at the same time. --
+
+
+Can you set the backup to run every 30 minutes?
+
+No, JetBackup decides when the job will run randomly and the minimum interval is daily
+Yes, there is no minimum interval
+Yes, only when the job is not running
+No, the minimum interval is hourly --
+
+
+When editing user permissions, what is the difference between no and never?
+
+No will deny the action, Never will deny & won’t allow permission override
+Never will deny action & its children --
+There is no difference.
+Never will ignore the action
+
+
+
+All backup destinations support incremental backups
+
+No, Amazon s3 doesn’t support incremental backups -?
+Incremental backups are not supported at all
+No -?
+Yes
+
+
+
+I have accounts with over 1 Million inodes, what is the best way to skip those accounts during a backup job?
+
+Inside backup job settings, choose only the accounts you want to backup, skipping the affected accounts
+Create a new hook that checks account inode count and will fail the action accordingly 
+Create a new filter type Accounts, choose the accounts you would like to exclude.
+Create a new filter type "Inode usage" and set limits accordingly --
+ 
+
+ 
+Which notification(s) below will you receive under a Critical Alert level?
+
+An account restore failed to complete
+JetBackup is unable to reach your destination
+A backup Job partially completed --
+Custom hook failed to execute.
+
+
+
+What is required for a Backup-on-demand?
+
+An active backup job with incremental supported destinations
+An active backup job configured for full account backups -
+An active backup job with object storage support
+An active backup job - 
+
+
+
+
+Is it possible for a cPanel user to only view backups without being able to restore them?
+
+Yes, using the JetBackup permissions system --
+Yes, but It depends on the backup job type (incremental vs compressed)
+No, once a cPanel user has access to his backups he is not limited to any action
+Yes, by default cPanel users can only view and root admin can restore
+
+
+
+What is an orphan backup?
+
+A backup of an addon domain that is not linked to any main cPanel account.
+A backup that was not indexed for more than 30 days, and removed from the DB. 
+A backup from another control panel (non-cPanel)
+A backup of an account that has been terminated from WHM --
+
+
+
+Compressed backups are supported for all destinations.
+
+Compressed backups are supported only on Object server based destinations -?
+Compressed backups are not supported 
+Yes
+No -?
+
+
+
+What are the benefits of a backup hook? What does it allow you to do in the general sense?
+
+A hook allows me to rewrite & modify JetBackup core functions
+A hook allows me to install 3rd party plugins
+A hook is there for JetBackup internal purposes only 
+A hook allows me to run a script at the hook point supplying relevant parameters --
+ 
+
+
+Is it possible to backup DNS Zones only?
+
+No, a full account backup will contain all user data including DNS Zones.
+Yes, using hooks
+Yes, inside backup job settings check only "DNS Zones" under "Backup Contains" --
+Yes, using file excludes 
+
+
+
+What is the difference between an archived backup and a compressed backup? (How is archived different?)
+
+There is no difference
+Archived is an uncompressed version of a compressed backup -?
+Archive only stores changes inside tar file -? 
+Archive is a gzip version of a compressed backup -?
+
+
+
+Is there a way to log backup activity for a certain account?
+
+No, it’s not possible
+Yes, you can use cron jobs to monitor JetBackup jobs and identify when a certain account is backed up. --
+Yes, it is possible using cPanel settings in the Account
+Yes, through a JetBackup hook --
+
+
+
+If a client wishes to receive certain Alert level notifications or wishes to disable some, where within the interface should they navigate?
+
+Change settings inside cPanel Contact Manager
+WHM -> JetBackup -> Settings -> Notification --
+There is no option to change notification settings
+Change default email in /root/.forward
+
+
+
+What is JB config and when it's useful?
+
+JetBackup internal database that is useful for logs and statistics
+It’s a unique snapshot of your system’s architecture, used for licensing --?
+JetBackup internal data containing all the configuration and is useful when migrating servers or restoring from a disaster --?
+There is no such thing as JB Config
+
+
+
+Is it possible to backup mailboxes only?
+
+No, a full account backup will contain all user data including emails.
+Yes, using file excludes 
+JetBackup supports this through the interface, by checking "Backup Only Email Structure" under "Backup contains" from within a job's settings. --
+Yes, using hooks
+
+
+
+I have a Backup Job that has been running for some time. I then add a new destination for the same Backup Job. How will JetBackup process the backups on the first run after adding a new destination?
+
+JetBackup will continue with incremental backups on both the original and new destination.
+JetBackup will remove the existing backups on the original destination and generate a new set of backups for both destinations to ensure consistency.
+JetBackup does not allow adding a new destination once the destination(s) has already been set on the Backup Job.
+JetBackup will continue with incremental backups on the original destination and generate the initial full backups on the new destination. --
