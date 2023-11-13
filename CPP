@@ -59,3 +59,17 @@ Which of the following are required to obtain an SSL certificate through the SSL
 
 When changes are made in the MultiPHP INI Editor interface, what file are the configuation changes written into?
 - php.ini
+
+
+If you are planning on renaming your databases, you should make sure and wait until AFTERWARDS to make backups.
+- false
+
+Which email account is used as the outgoing email address on mail sent by PHP scripts on your account?
+- The Default Email Account
+
+Which of the following indicates the recommended method to find more information on how MySQL privileges work?
+- Refer to the official MySQL documentation (aka, google 'mysql privileges')
+
+Your main website's files should be stored within which of these directories?
+
+- /home/$user/public_html
