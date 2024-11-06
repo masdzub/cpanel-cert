@@ -881,3 +881,30 @@ If the mail server defers a message, what did it do to the message?
 
 Given the following options, which of these accurately describe the behavior of the Mail Troubleshooter interface, found in WHM?
 - It can report the remote or local server that Exim uses to hand off messages for a specific email address.
+
+Yudith manages a small web hosting company and has accidentally deleted a zone belonging to a cPanel account. The deleted zone did not contain any custom records.
+Which of the following interfaces in WHM should she use to recreate the zone?
+- WHM » DNS Functions » Add a DNS Zone.
+
+Which of the following can be described as having the following major strengths?
+Very high performance.
+Low memory footprint.
+- PowerDNS
+
+As a WHM administrator, you receive the following email alert:
+The hostname server.example.com resolves to the 10.0.2.5 IP address. It should resolve to the 10.0.3.5 IP address.
+What is the most likely scenario to have caused this notification to be sent? 
+- The hostname does not point to the main IP address on the server.
+
+Which of the following is one of the most common causes of MySQL upgrade failures?
+- The my.cnf file contains a number of non-default customizations that have not been verified prior to upgrading.
+
+Which of the following options best indicate a legitimate reason that would describe why you would want to configure the forwarder address fields within the WHM Home » Server Contacts » Edit System Mail Preferences interface?
+- To prevent emails destined for “root” from getting frozen within the mail queue.
+
+Which of the following options best indicate the typical delivery failure rate that a spamming email account will report, if examining from the Mail Delivery Reports interface found in WHM?
+- The account will have a high failure rate.
+
+What is one characteristic that is often, though not always indicative, of an average spam email message?
+- The message is small in size.
+
