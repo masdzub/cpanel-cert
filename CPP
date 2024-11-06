@@ -71,5 +71,11 @@ Which of the following indicates the recommended method to find more information
 - Refer to the official MySQL documentation (aka, google 'mysql privileges')
 
 Your main website's files should be stored within which of these directories?
-
 - /home/$user/public_html
+
+Which of the following domain redirect types will result in client browser bookmarks being updated to the destination URL?
+- 301
+
+When deleting an email account, how can you automatically recover data that was stored within that account?
+*- Email account data can be recovered by submitting a cPanel Support ticket and requesting a recovery procedure.
+- Email account data can be recovered by accessing the File Manager and navigating directly to the account's folder.
